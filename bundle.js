@@ -67,7 +67,8 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-console.log('Hello World, from webpack')
+//console.log('Hello World, from webpack')
+console.log('Hello World, from webpack config')
 
 /***/ })
 /******/ ]);

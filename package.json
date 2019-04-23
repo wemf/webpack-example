@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack index.js bundle.js",
     "build:local": "webpack",
-    "build:external": "webpack --config ./external/webpack.config.js"
+    "build:external": "webpack --config ./external/webpack.config.js",
+    "build:css": "webpack --config ./css-style-loader/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,8 @@
   },
   "homepage": "https://github.com/wemf/webpack-example#readme",
   "devDependencies": {
-    "webpack": "^3.8.1"
+    "css-loader": "0.28.7",
+    "style-loader": "0.19.1",
+    "webpack": "3.8.1"
   }
 }

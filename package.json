@@ -1,0 +1,22 @@
+{
+  "name": "curso-de-webpack",
+  "version": "1.0.0",
+  "description": "este es un curso de platzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wemf/webpack-example.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "wemf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wemf/webpack-example/issues"
+  },
+  "homepage": "https://github.com/wemf/webpack-example#readme"
+}

@@ -13,10 +13,13 @@
   "keywords": [
     "webpack"
   ],
-  "author": "wemf",
+  "author": "@wemf",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wemf/webpack-example/issues"
   },
-  "homepage": "https://github.com/wemf/webpack-example#readme"
+  "homepage": "https://github.com/wemf/webpack-example#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
 }

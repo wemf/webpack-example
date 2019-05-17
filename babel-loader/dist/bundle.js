@@ -75,6 +75,7 @@ __webpack_require__(1);
 var _message = __webpack_require__(2);
 
 document.write('' + _message.firstMessage);
+(0, _message.delayedMessage)();
 //console.log('Hello World, from webpack')
 console.log('Hello World, from extenal webpack config');
 
@@ -91,9 +92,63 @@ console.log('Hello World, from extenal webpack config');
 "use strict";
 
 
+var _renderToDom = __webpack_require__(3);
+
+var _renderToDom2 = _interopRequireDefault(_renderToDom);
+
+var _makeMessage = __webpack_require__(4);
+
+var _makeMessage2 = _interopRequireDefault(_makeMessage);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var waitTime = new Promise(function (todoOk, todoMal) {
+    setTimeout(function () {
+        todoOk('Han pasado 3 segundos, omg');
+    }, 3000);
+});
+
 module.exports = {
-    firstMessage: 'Hola mundo desde un módulo'
+    firstMessage: 'Hola mundo desde un módulo',
+    delayedMessage: async function delayedMessage() {
+        var message = await waitTime;
+        console.log(message);
+        //const element = document.createElement('p')
+        //element.textContent = message
+        (0, _renderToDom2.default)((0, _makeMessage2.default)(message));
+    }
 };
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function renderToDOM(element) {
+    document.body.append(element);
+};
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+// module.exports =
+
+function makeMessage(msg) {
+    var element = document.createElement('p');
+    element.textContent = msg;
+    return msg;
+}
+
+exports.default = makeMessage;
 
 /***/ })
 /******/ ]);

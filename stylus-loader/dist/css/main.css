@@ -1,0 +1,33 @@
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  flex-direction: column;
+  /*background-image: url('../images/platzi.png');*/
+  background-size: contain;
+}
+.Teacher {
+  border: 1px solid #f00;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  background: #008000;
+}
+@media only screen and (max-width: 768px) {
+  .Teacher {
+    background: #00f;
+  }
+}
+.Teachers {
+  border: 5px dashed orange;
+  padding: 10px;
+  background: grey; }

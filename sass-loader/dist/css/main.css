@@ -1,0 +1,18 @@
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: lightblue;
+  height: 100vh;
+  margin: 0;
+  font-size: 40px;
+  flex-direction: column;
+  /*background-image: url('../images/platzi.png');*/
+  background-size: contain;
+}
+.Teachers {
+  border: 5px dashed orange;
+  padding: 10px;
+  background: grey; }
